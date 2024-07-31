@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Operations in JavaScript</title>
+</head>
+<body>
+
+<script>
+  let arr = [5, 3, 8, 1, 2];
+  let index = arr.indexOf(3);
+  document.write('<p>Index of 3: ' + index + '</p>'); 
+  let found = arr.find(element => element > 3);
+  document.write('<p>First element greater than 3: ' + found + '</p>'); 
+  let includes = arr.includes(3);
+  document.write('<p>Array includes 3: ' + includes + '</p>'); 
+  let filteredArr = arr.filter(element => element > 3);
+  document.write('<p>Elements greater than 3: ' + filteredArr.join(', ') + '</p>'); 
+  let mappedArr = arr.map(element => element * 2);
+  document.write('<p>Elements multiplied by 2: ' + mappedArr.join(', ') + '</p>'); 
+  arr.sort((a, b) => a - b);
+  document.write('<p>Sorted array: ' + arr.join(', ') + '</p>'); 
+  arr.reverse();
+  document.write('<p>Reversed array: ' + arr.join(', ') + '</p>'); 
+  let str = arr.join('-');
+  document.write('<p>Joined string: ' + str + '</p>');
+  let splitArr = str.split('-');
+  document.write('<p>Split array: ' + splitArr.join(', ') + '</p>'); 
+</script>
+
+</body>
+</html>
